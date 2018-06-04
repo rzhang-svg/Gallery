@@ -1,0 +1,177 @@
+
+body {
+	font-family : 'Georgia' , 'Arial', sans-serif;
+}
+
+.navbar{
+	min-height:30px; 
+	margin-bottom: 20px !important; 
+	border-radius: 0;
+}
+
+
+.navbar .navbar-brand {
+	padding: 0 12px; font-size: 16px; line-height: 38px; height:38px;
+
+}
+
+ .navbar .navbar-nav > li > a {
+ 	padding-top: 0px; 
+ 	padding-bottom: 0px;
+ 	line-height: 38px;
+ 	color: #fff
+
+ }
+  .navbar .navbar-toggler {
+ 	margin-top:3px;
+ 	margin-bottom: 0px;
+ 	padding: 8px 9px;
+ }
+
+  .navbar .navbar-form {
+ 	margin-top :2px; margin-bottom: 0px;
+ }
+
+ .navbar .navbar-collapse {
+ 	border-color: #A40303;
+ }
+
+ h1, h2 {
+ 	border-left: 5px #666 solid;
+ 	border-bottom: 1px  #666 solid;
+ 	padding: 0 0 5px 10px;
+ 	margin-bottom: 30px;
+
+ }
+
+ img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out
+}
+
+#gallery {
+	width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out
+}
+	
+
+.col-md-3{
+	padding:1px;
+}
+
+#edit_images img{
+	width:118%;
+	
+}
+
+#edit_images {
+	margin-bottom:10px;
+}
+
+.delete {
+	color:red;
+}
+
+.photo {
+	text-align: center;
+	position: relative;
+}
+
+.photo, 
+.photo-hover,
+.photo-img,
+.photo-hover .mask{
+	width: 285px;
+	height: 220px;
+	top:0;
+}
+.photo-info {
+	width:250px;
+	height: 220px;
+	top:0px;
+	left:20px;
+}
+
+
+.photo-img, 
+.photo-hover, 
+.photo-hover .mask {
+	position: absolute;
+	top: 0;
+	left: 9;
+}
+
+.photo-type-line{
+	z-index:100;
+	opacity: 1;
+	cursor:pointer;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	top:0;
+}
+
+.desc{
+	font-size:15px;
+}
+.photo-hover {
+	z-index:100;
+	opacity: 0;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+.photo-type-line, .photo-info {
+	z-index: 10;
+	color:black;
+	display:table-cell;
+	vertical-align: middle;
+	position:relative;
+
+}
+
+.photo-type-line .photo-info .headline {
+	font-size: 18px;
+}
+
+.photo-type-line .photo-info .line {
+	height:1px;
+	width: 10%;
+	margin:15px auto;
+	background: black;
+	-webkit-transition :all 500ms ease;
+	-moz-transition :all 500ms ease;
+	transition: all 500ms ease;
+
+}
+
+.photo-type-line .photo-hover .mask {
+	background: #fff;
+	filter:alpha(opacity = 50);
+	opacity: 0.5;
+	z-index:0;
+}
+.photo-type-line .photo-hover:hover .line {
+	width:40%;
+}
+
+.photo-type-line .photo-hover:hover {
+	opacity: 1;
+}
+
+.photo-img {
+	background: white;
+	z-index: 0;
+	opacity: 1;
+}
+
+.photo-type-line:hover img {
+  opacity: 0.3;
+  color: white;
+}
+
+
