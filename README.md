@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run this App install ruby on rails and run rails server locally in your command line.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version:3.5.2
 
-* System dependencies
+* System dependencies: requires imagemagick and rmagick
 
-* Configuration
+* Database creation: created through rake:db
 
-* Database creation
+* Database initialization: rake db:Migrate
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
